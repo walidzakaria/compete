@@ -132,7 +132,11 @@ class Process(models.Model):
     choices_c = models.CharField(max_length=255, verbose_name='Choices C', blank=True, null=True)
     choices_d = models.CharField(max_length=255, verbose_name='Choices D', blank=True, null=True)
     answer = models.CharField(max_length=255, verbose_name='Answer', blank=True, null=True)
-    duration = models.IntegerField(default=60, verbose_name='Pressure Duration')
+    duration = models.IntegerField(default=60, verbose_name='Duration')
+    max_duration = models.IntegerField(default=60, verbose_name='Max Duration')
+    paused = models.BooleanField(default=False, verbose_name='Paused')
+    time_left = models.IntegerField(blank=True, null=True)
+    
         
     def __str__(self):
         return self.page

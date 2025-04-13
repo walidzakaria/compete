@@ -36,7 +36,7 @@ LOCAL = config.getboolean('App', 'LOCAL')
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    '161.35.197.203',
+    '162.220.54.73',
     'planet-corp.com',
     'www.planet-corp.com',
 ]
@@ -49,8 +49,8 @@ CORS_ORIGIN_WHITELIST = (
     'http://127.0.0.1:8000',
     'http://127.0.0.1:9000',
     'http://127.0.0.1:8080',
-    'http://161.35.197.203:8000',
-    'http://161.35.197.203',
+    'http://162.220.54.73:8000',
+    'http://162.220.54.73',
     'http://planet-corp.com',
     'http://www.planet-corp.com',
     'https://planet-corp.com',
@@ -58,7 +58,7 @@ CORS_ORIGIN_WHITELIST = (
 )
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://161.35.197.203',
+    'http://162.220.54.73',
     'http://localhost',
     'http://127.0.0.1',
     'http://planet-corp.com',
@@ -67,7 +67,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://www.planet-corp.com',
 ]
 
-BASE_URL = 'http://161.35.197.203'
+BASE_URL = 'http://162.220.54.73'
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
 # Application definition
@@ -229,8 +229,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:8000",
     "http://localhost:9000",
     "http://127.0.0.1:9000",
-    'http://161.35.197.203',
-    'http://161.35.197.203:8000',
+    'http://162.220.54.73',
+    'http://162.220.54.73:8000',
     'http://planet-corp.com',
     'http://www.planet-corp.com',
     'https://planet-corp.com',
